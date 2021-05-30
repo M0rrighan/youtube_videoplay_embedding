@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* a {
+    text-decoration: none;
+}
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: white;
+    background-color: #212121; 
+}
+
+/* start header - nav_bar */
+.header{
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    padding: 15px;
+    background-color: #282828;
+    z-index: 100;
+}
+
+.material-icons {
+    color: white;
+}
+
+.logo_section {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.youtube_logo {
+    height: 20px;
+    padding-left: 25px;               
+}
+
+.header i {
+    cursor: pointer;
+    padding: 0 6;
+}
+
+
+.search_bar {
+    display: flex;
+    flex-grow: 0.45;
+    margin: auto;
+}
+
+.search_input {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 0.1rem 0.5rem;
+    border: 1px solid #535353;
+    border-right: none;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; 
+}
+
+.search_btn {
+    background-color: #4d4d4d;
+    display: flex;
+    align-items: center;
+    padding: 0 1.25rem;
+    border: 1px solid #535353;
+    border-left: none;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.navlinks_section{
+    margin-right: 10px;
+}
+
+.navlinks_section a {
+    text-decoration: none;
+    padding: 0 10px;
+}
+/* header nav_bar end */
+
+
+.container{
+    width : 86vw;
+    height : 100vh;
+    position: relative;    
+    top: 60px;
+    display:flex;
+    margin: auto;    
+  }
+
+  .primary_section {    
+    flex : 2;
+    display:flex;
+    flex-direction : column;
+    padding-right: 28px;   
+  }
+
+  /* .player_section {
+      background-color: transparent;
+    /* flex:1; */
+    /* background-color : #214585; */
+    /* margin : 2%; 
+  } */
+
+  .video_bottom_section {
+    padding-top: 10px;
+}
+
+/* .video_bottom_section a {
+    text-decoration: none;
+} */
+
+.video_title {
+    font-size: 18px;
+    color: white;
+}
+
+.video_data {
+    font-size: 14px;
+    color: lightgray;
+    padding-top: 10px;
+}
+
+.channel_section{
+    padding-top: 15px;
+    display: flex;
+}
+
+.channel_data {
+    padding: 10px;
+    flex-grow: 3;
+}
+.channel-icon img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.channel_name{
+    font-size: 14px;
+    color: white;
+}
+
+.channel_name_rel {
+    color: #AAAAAA;
+    font-size: 14px;
+}
+.subscribers{
+    font-size: 12px;
+    color: #AAAAAA;
+}
+.subscribe_btn{
+    color: white;
+    background-color: #CC0000;
+    font-size: 14px;
+    border: none;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+.channel_section a{
+    text-decoration: none;
+}
+
+  .comments_section {
+    background-color : transparent;
+    padding: 10px;
+  }
+
+  .line {
+      background-color: #505050;
+      height: 0.8px;
+  }
+
+  /* ---------------- */
+
+  .secondary_section {
+    flex:1;
+    display:flex;
+    background-color :transparent;
+  } 
+  
+  .rel_video_container {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 1em;
+  }
+
+  .rel_video_container a{
+    text-decoration: none;
+  }
+  .rel_video_container img{
+    width: 168px;
+    height: 94px;
+  }
+  
+  .video_data_rel {
+    font-size: 12px;
+    color: #AAAAAA;
+    padding: 10px;
+}
+
+.video_title_rel {
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+    /* padding-top: 15px; */
+}
+
+.thumbnail {
+    position: relative;
+    display: flex;
+}
+
+.thumbnail::before {
+    content: attr(duration);
+    position:absolute;
+    right: 5px;
+    bottom: 5px;
+    color: white;
+    background-color: rgb(17, 17, 17);    
+    padding: 0.1em 0.3em;
+    border-radius: 0.3em;
+    font-size: 0.8rem;
+}
