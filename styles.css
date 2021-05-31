@@ -189,7 +189,7 @@ body {
     padding-left: 10px;
 }
 .thumbnail img{
-    background-color: grey;
+    background-color: rgb(110, 110, 110);
     width: 100%;
     height: 100%;
 }
